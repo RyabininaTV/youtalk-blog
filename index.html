@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог о психотерапии, самопомощи, отношениях и личных границах">
+    <title>Youtalk — Блог о психотерапии и самопомощи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header">
+    <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo" aria-label="Youtalk - главная страница">
+            <img class="site-header__logo-img" alt="YouTalk" src="figmaAssets/frame-3.svg" width="51" height="36">
+        </a>
+
+        <button class="site-header__mobile-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+            <span class="site-header__mobile-menu-icon">
+                <span class="site-header__mobile-menu-line"></span>
+                <span class="site-header__mobile-menu-line"></span>
+                <span class="site-header__mobile-menu-line"></span>
+            </span>
+        </button>
+
+        <nav class="site-header__nav" id="navMenu">
+            <ul class="site-header__nav-list">
+                <li><a href="#" class="site-header__nav-link">О нас</a></li>
+                <li><a href="#" class="site-header__nav-link">Тарифы</a></li>
+                <li><a href="#" class="site-header__nav-link">Для бизнеса</a></li>
+                <li><a href="#" class="site-header__nav-link">Психологи</a></li>
+                <li><a href="index.html" class="site-header__nav-link site-header__nav-link--active">Блог</a></li>
+                <li><a href="#" class="site-header__nav-link">Вебинары</a></li>
+                <li><a href="#" class="site-header__nav-link">Подсказки <span>▼</span></a></li>
+                <li><a href="#" class="site-header__nav-link">Сертификаты</a></li>
+                <li><a href="#" class="site-header__nav-link">Контакты</a></li>
+            </ul>
+            <button class="site-header__cta">Войти</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page__container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="index.html" class="breadcrumb__link">Главная</a>
+                    <span class="breadcrumb__separator" aria-hidden="true">
+                        <img class="breadcrumb__separator-icon" alt="" src="figmaAssets/arrow.svg" width="16" height="16">
+                    </span>
+                </li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__current" aria-current="page">Блог</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page title -->
+        <h1 class="page-title">Блог</h1>
+
+        <!-- Tags filter -->
+        <div class="tags__list">
+            <button class="tags__btn tags__btn--active">Все</button>
+            <button class="tags__btn">Самооценка и самопринятие</button>
+            <button class="tags__btn">Self</button>
+            <button class="tags__btn">Тревога</button>
+            <button class="tags__btn">Эмоции</button>
+            <button class="tags__btn">Выгорание</button>
+            <button class="tags__btn">Отношения</button>
+        </div>
+
+        <!-- Articles grid -->
+        <div class="articles__grid" id="articlesGrid">
+            <!-- Article 1 -->
+            <article class="card">
+                <a href="article.html" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/rectangle-4.png" alt="Эмоциональное выгорание" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Самооценка и самопринятие</span>
+                        <h2 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                        <div class="card__author">Автор: Лиза Файнтук</div>
+                        <p class="card__description">Изначально термин «эмоциональное сгорание» ввёл американский психиатр Герберт Фрейденбергер в 1974 году. Он описал состояние, которое наблюдал у себя и своих коллег, работающих в медицинской сфере.</p>
+                        <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card">
+                <a href="article.html" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/image-4.png" alt="Как не утонуть в тревоге" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Self</span>
+                        <h2 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                        <div class="card__author">Автор: Екатерина Белоконова</div>
+                        <p class="card__description">Один из самых важных навыков, которые может дать работа с психотерапевтом — умение в разных ситуациях по-разному обходиться со своими эмоциями. Снять этот процесс с автопилота и перевести его в поле сознания.</p>
+                        <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="card">
+                <a href="#" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/image-1.png" alt="Как управлять эмоциями" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Эмоции</span>
+                        <h2 class="card__title">Как управлять своими эмоциями: 8 шагов</h2>
+                        <div class="card__author">Автор: Екатерина Белоконова</div>
+                        <p class="card__description">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать. Эмоции — это не враги, а сигналы нашего организма.</p>
+                        <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="card">
+                <a href="#" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/image-2.png" alt="Путь к себе" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Self</span>
+                        <h2 class="card__title">Путь к себе: как принять свою уникальность</h2>
+                        <div class="card__author">Автор: Мария Андреева</div>
+                        <p class="card__description">Принятие себя — это фундамент здоровой самооценки и счастливой жизни. Когда мы перестаём сравнивать себя с другими, начинается настоящая жизнь.</p>
+                        <time class="card__date" datetime="2021-07-15">15.07.2021</time>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="card">
+                <a href="#" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/image-3.png" alt="Выгорание" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Выгорание</span>
+                        <h2 class="card__title">Как распознать выгорание на ранней стадии</h2>
+                        <div class="card__author">Автор: Лиза Файнтук</div>
+                        <p class="card__description">Симптомы профессионального выгорания и способы восстановления. Важно заметить первые признаки вовремя, чтобы предотвратить серьёзные последствия.</p>
+                        <time class="card__date" datetime="2021-06-10">10.06.2021</time>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="card">
+                <a href="#" class="card__link">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="figmaAssets/rectangle.png" alt="Личные границы" loading="lazy">
+                    </div>
+                    <div class="card__content">
+                        <span class="card__tag">Отношения</span>
+                        <h2 class="card__title">Личные границы: как научиться говорить "нет"</h2>
+                        <div class="card__author">Автор: Анна Смирнова</div>
+                        <p class="card__description">Умение отстаивать свои границы — ключ к здоровым отношениям и внутреннему комфорту. Как перестать быть удобным для всех и начать жить для себя.</p>
+                        <time class="card__date" datetime="2021-06-28">28.06.2021</time>
+                    </div>
+                </a>
+            </article>
+        </div>
+
+        <!-- Load more button -->
+        <div class="load-more">
+            <button class="btn-load-more" id="loadMoreBtn">Ещё</button>
+        </div>
+    </div>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <div class="site-footer__top">
+            <div class="site-footer__nav">
+                <div class="site-footer__nav-columns">
+                    <ul class="site-footer__nav-list">
+                        <li><button class="site-footer__nav-btn">О нас</button></li>
+                        <li><button class="site-footer__nav-btn">Тарифы</button></li>
+                        <li><button class="site-footer__nav-btn">Для бизнеса</button></li>
+                        <li><button class="site-footer__nav-btn">Психологи</button></li>
+                        <li><button class="site-footer__nav-btn">FAQ</button></li>
+                    </ul>
+                    <ul class="site-footer__nav-list">
+                        <li><button class="site-footer__nav-btn">Блог</button></li>
+                        <li><button class="site-footer__nav-btn">Вебинары</button></li>
+                        <li><button class="site-footer__nav-btn">Подсказки</button></li>
+                        <li><button class="site-footer__nav-btn">Сертификаты</button></li>
+                        <li><button class="site-footer__nav-btn">Контакты</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="site-footer__newsletter">
+                <h3 class="site-footer__newsletter-title">Одно письмо в неделю со свежими новостями и акциями</h3>
+                <form class="site-footer__newsletter-form" id="subscribeForm">
+                    <label class="site-footer__newsletter-label" for="emailInput">Ваш e-mail</label>
+                    <input type="email" id="emailInput" class="site-footer__newsletter-input" placeholder="Ваш e-mail" required>
+                    <button type="submit" class="site-footer__newsletter-submit" aria-label="Подписаться">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+                <p class="site-footer__newsletter-privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+            </div>
+
+            <div class="site-footer__branding">
+                <img class="site-footer__branding-img" src="figmaAssets/mask-group.png" alt="Youtalk" width="221" height="122">
+            </div>
+        </div>
+
+        <div class="site-footer__divider"></div>
+
+        <div class="site-footer__bottom">
+            <div class="site-footer__copyright">© Youtalk, 2021</div>
+            <div class="site-footer__legal">
+                <button class="site-footer__legal-btn">Юридическая информация</button>
+                <button class="site-footer__legal-btn">Политика конфиденциальности</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
